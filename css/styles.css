@@ -29,3 +29,10 @@ img {
 .owl-carousel {
 	display: none;
 }
+
+#cboxCurrent, button {
+	display: none !important;
+}
+#cboxLoadedContent {
+	margin-bottom: 0 !important;
+}

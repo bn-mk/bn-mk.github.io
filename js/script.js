@@ -8,12 +8,12 @@ $(function(){
 		}
 	});
 
-	// $grid.imagesLoaded().progress( function() {
-	// 	$grid.isotope('layout');
-	// });
+	$grid.imagesLoaded().progress( function() {
+		$grid.isotope('layout');
+	});
 
-	$('.gallery').colorbox({rel: 'gallery', 
-		maxWidth: '800px',
+	$('.gallery').colorbox({rel: 'gallery',
+		maxWidth: '100%',
 		closeButton: false
 	});
 });

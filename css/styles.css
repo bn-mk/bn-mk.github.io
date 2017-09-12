@@ -17,3 +17,11 @@ body {
 .logo {
 	padding: 10px;
 }
+
+.grid-sizer, .grid-item {
+	width: 25%;
+}
+
+img {
+	max-width: 100%;
+}

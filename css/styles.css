@@ -18,8 +18,31 @@ body {
 	padding: 10px;
 }
 
+.grid-item {
+	float: left;
+	position: relative;
+}
+
 .grid-sizer, .grid-item {
-	width: 25%;
+	width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+	.grid-sizer, .grid-item {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.grid-sizer, .grid-item {
+		width: 33%;
+	}
+}
+
+.grid:after {
+	content: "";
+	display: block;
+	clear: both;
 }
 
 img {

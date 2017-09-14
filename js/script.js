@@ -4,7 +4,8 @@ $(function(){
 		itemSelector: '.grid-item',
 		percentPosition: true,
 		masonry: {
-			columnWidth: '.grid-sizer'
+			columnWidth: '.grid-sizer',
+      gutter: 0
 		}
 	});
 

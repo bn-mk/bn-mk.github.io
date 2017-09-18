@@ -18,6 +18,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 55px;
+  background: #111111;
+  z-index: 1;
+  top: 0;
 }
 
 .logo {
@@ -53,6 +59,10 @@ a:hover, a:visited, a:active {
   color: #aaaaaa;
 }
 
+section {
+  margin-top: 55px;
+}
+
 .grid-item {
 	float: left;
 	position: relative;
@@ -84,8 +94,11 @@ img {
 	max-width: 100%;
 }
 
-.owl-carousel {
-	display: none;
+img:hover {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
 #cboxCurrent, button {
@@ -93,4 +106,8 @@ img {
 }
 #cboxLoadedContent {
 	margin-bottom: 0 !important;
+}
+
+.words p {
+	padding: 10px 20px;
 }

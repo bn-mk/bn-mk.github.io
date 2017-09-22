@@ -26,6 +26,17 @@ header {
   top: 0;
 }
 
+header:after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 59px;
+    background: url(../img/assets/blob.png);
+    bottom: -54px;
+    right: 0px;
+    background-size: contain;
+}
+
 .logo {
 	padding: 10px;
   width: 25%;
@@ -111,4 +122,12 @@ img:hover {
 .words p {
 	font-size: 1.3em;
 	padding: 10px 20px;
+}
+
+.wordspage {
+	background: #EEEFFF;
+}
+
+.wordspage section{
+	margin-top: 135px;
 }

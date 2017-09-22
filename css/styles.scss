@@ -1,0 +1,160 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 1em;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #555555;
+	background: #111111;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 55px;
+  background: #111111;
+  z-index: 1;
+  top: 0;
+}
+
+header:after {
+	content: "";
+	width: 100%;
+	position: absolute;
+	height: 50px;
+	background: url(../img/assets/blob.png);
+	bottom: -50px;
+	right: 0px;
+	background-size: contain;
+}
+
+.logo {
+	padding: 10px;
+	width: 25%;
+	float: left;
+}
+
+.menu {
+  float: right;
+  width: 70%;
+}
+
+.menu ul li {
+	float: right;
+	display: inline-block;
+	list-style: none;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+a, a:visited{
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover, a:active , a.active {
+	color: #aaaaaa;
+}
+
+.white {
+	color: #aaaaaa;
+}
+
+section {
+	margin-top: 55px;
+}
+
+.grid-item {
+	float: left;
+	position: relative;
+}
+
+.grid-sizer, .grid-item {
+	width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+	.grid-sizer, .grid-item {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.grid-sizer, .grid-item {
+		width: 33%;
+	}
+}
+
+.grid:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+img {
+	max-width: 100%;
+	transition: .3s ease-in;
+	cursor: pointer;
+}
+
+a:focus {
+	outline: none;
+}
+
+img:hover {
+	/*filter: grayscale(100%);*/
+	filter: saturate(200%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.cboxPhoto {
+	filter: grayscale(0%);
+}
+
+#cboxCurrent, button {
+	display: none !important;
+}
+#cboxLoadedContent {
+	margin-bottom: 0 !important;
+}
+
+.words p {
+	font-size: 1.3em;
+	padding: 10px 20px;
+}
+
+.wordspage {
+	background: #EEEFFF;
+}
+
+.wordspage section{
+	margin-top: 135px;
+}
+
+.pictures .grid-item {
+	cursor: pointer;
+}
+
+@media screen and (min-width: 500px) {
+
+	@keyframes animatedBackground {
+	    // 0% { background-position: 0 0; }
+	    100% { background-position: 100% 0; }
+	}
+
+	header:after {
+	    background-position: 0px 0px;
+	    animation: animatedBackground 30s linear infinite;
+	}
+}

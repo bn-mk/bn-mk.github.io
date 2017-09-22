@@ -119,7 +119,7 @@ img:hover {
 }
 
 .cboxPhoto {
-	filter: grayscale(0%);
+	filter: saturate(100%);
 }
 
 #cboxCurrent, button {

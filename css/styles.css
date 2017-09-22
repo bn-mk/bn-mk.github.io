@@ -108,6 +108,10 @@ img {
 	cursor: pointer;
 }
 
+a:focus {
+	outline: none;
+}
+
 img:hover {
 filter: grayscale(0%);
 	-webkit-transition: .3s ease-in-out;
